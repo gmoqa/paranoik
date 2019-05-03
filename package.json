@@ -1,6 +1,6 @@
 {
   "name": "paranoik",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "HTTP request signature verifier middleware for node.js",
   "main": "index.js",
   "repository": {
