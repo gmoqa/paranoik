@@ -1,0 +1,26 @@
+{
+  "name": "paranoik",
+  "version": "0.0.1",
+  "description": "HTTP request signature verifier middleware for node.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmoqa/paranoik.git"
+  },
+  "keywords": [
+    "middleware",
+    "signature",
+    "security",
+    "api",
+    "rest"
+  ],
+  "author": "Guillermo Quinteros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmoqa/paranoik/issues"
+  },
+  "homepage": "https://github.com/gmoqa/paranoik#readme",
+  "dependencies": {
+    "js-md5": "^0.7.3"
+  }
+}
