@@ -1,7 +1,13 @@
 # paranoik
 [![NPM Version][npm-version-image]][npm-url] ![size] ![license]
 
->HTTP request signature verifier middleware for express.js
+>HTTP request checksum integrity verifier middleware for Express.js.
+
+## Installation
+
+```bash
+npm install paranoik
+```
 
 ## Usage
 
@@ -11,7 +17,7 @@ const paranoik = require('paranoik');
 
 const app = express();
 
-app.use(paranoik(process.env.SECRET))
+app.use(paranoik({ YOUR_SECRET }));
 ```
 
 ## License
