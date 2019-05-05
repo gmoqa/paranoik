@@ -1,7 +1,9 @@
 # paranoik
 [![NPM Version][npm-version-image]][npm-url] ![size] ![license]
 
->HTTP request checksum integrity verifier middleware for Express.js.
+Check integrity of each request using a custom HTTP header checksum.
+
+ The hash is formed by [`request url`, `request method`, `request data`, `request user-agent`, `secret key`] in a MD5 hash function.  
 
 ## Installation
 
@@ -9,7 +11,8 @@
 npm install paranoik
 ```
 
-## Usage
+
+## Basic Usage
 
 ```js
 const express = require('express');
@@ -17,7 +20,20 @@ const paranoik = require('paranoik');
 
 const app = express();
 
-app.use(paranoik({ YOUR_SECRET }));
+app.use(paranoik('YOUR_SECRET'));
+```
+
+##Configuration
+```js
+const options = {
+    secret: YOUR_SECRET,
+    whitelist: [
+        '/login',
+        '/recovery'
+    ]
+};
+
+app.use(paranoik(options));
 ```
 
 ## License
